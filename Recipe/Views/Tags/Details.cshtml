@@ -1,0 +1,28 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Recipe.Models.Tag;
+
+<h1>Tag Details</h1>
+<hr />
+<h3>@Html.DisplayNameFor(model => model.TagName): @Html.DisplayFor(model => model.TagName)</h3>
+
+@if(@Model.JoinEntities.Count == 0)
+{
+  <p>This tag does not contain any recipes</p>
+}
+else
+{
+  <h4>Recipes the tag contains:</h4>
+  <ul>
+  @foreach(var join in Model.JoinEntities)
+  {
+    <li>@join.Formula.FormulaName</li>
+  }
+  </ul>
+}
+
+<p>@Html.ActionLink("Back to tags", "Index", new { area = "" }, new { @class = "accept" })</p>
+<p>@Html.ActionLink("Edit Tag", "Edit", new { id = Model.TagId }, new { @class = "accept" })</p>
+<p>@Html.ActionLink("Delete Tag", "Delete", new { id = Model.TagId }, new { @class = "accept" })</p>

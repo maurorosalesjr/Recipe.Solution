@@ -1,0 +1,22 @@
+
+
+@{
+  Layout = "_Layout";
+}
+
+@model Recipe.Models.Tag
+
+<h1>Edit</h1>
+
+<h4>Edit this tag: @Html.DisplayFor(model => model.TagName)</h4>
+
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.TagId)
+
+  @Html.LabelFor(model => model.TagName)
+  @Html.EditorFor(model => model.TagName)
+
+  <input type="submit" value="Save" class="accept" />
+}
+<p>@Html.ActionLink("Back to list", "Index", new { area = "" }, new { @class = "accept" })</p>
