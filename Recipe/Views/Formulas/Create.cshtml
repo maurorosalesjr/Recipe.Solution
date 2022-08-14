@@ -1,0 +1,19 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Recipe.Models.Item
+
+<h1>Add a new task</h1>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.FormulaName)
+    @Html.TextBoxFor(model => model.FormulaName)
+
+    @Html.Label("Select tag")
+    @Html.DropDownList("TagId")
+
+    <input type="submit" value="Add new item" class="accept" />
+}
+<p>@Html.ActionLink("Show all items", "Index", new { area = "" }, new { @class = "accept" })</p>

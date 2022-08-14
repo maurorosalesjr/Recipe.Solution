@@ -1,0 +1,24 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Recipe.Models.Formula
+
+<h1>Edit</h1>
+
+<h4>Edit this task: @Html.DisplayFor(model => model.FormulaName)</h4>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.FormulaId)
+
+    @Html.LabelFor(model => model.FormulaName)
+    @Html.EditorFor(model => model.FormulaName)
+
+    @Html.Label("Select tag")
+    @Html.DropDownList("TagId")
+
+    <input type="submit" value="Save" class="accept" />
+}
+
+<p>@Html.ActionLink("Back to list", "Index", new { area = "" }, new { @class = "accept" })</p>
