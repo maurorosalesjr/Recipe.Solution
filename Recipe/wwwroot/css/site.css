@@ -1,0 +1,120 @@
+﻿div#footer {
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	color:#CCC;
+	background:#333;
+	padding:8px;
+  text-align: center;
+}
+
+html {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);}
+
+body {
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 7%;
+  font-family: 'Times New Roman', Times, serif;
+  max-width: 100%; 
+  width: 90%;
+	border-radius: 2%;
+	border: 5px;
+	border-style: ridge;
+	border-color: dimgray;
+	background-color: lightblue;
+}
+
+li {
+  margin-left: 5%;
+  margin-right: 10%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  background-color:lightcyan;
+  text-shadow: 2px;
+  border: 6px;
+  padding-bottom: 2%;
+  border-style: groove;
+  border-color: dodgerblue;
+}
+
+.accept {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  background-color: springgreen;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.accept:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+
+.delete {
+  font-family: "Open Sans", sans-serif;
+  font-size: 8px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  background-image: linear-gradient(to right, red, orangered);
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 5px;
+}
+
+.delete:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+.name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  background-image: linear-gradient(to right, orange, limegreen);
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 5px;
+}
+
+.name:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
