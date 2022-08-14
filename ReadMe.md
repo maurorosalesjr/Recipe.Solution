@@ -20,7 +20,7 @@
 
 Enables 
 
-![SQL Design](Factory/wwwroot/img/SQLDesign.png "SQL Design")
+![SQL Design](Recipe/wwwroot/img/SQLDesign.png "SQL Design")
 
 ## Setup/Installation Requirements
 
