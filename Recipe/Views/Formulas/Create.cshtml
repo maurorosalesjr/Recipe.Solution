@@ -2,7 +2,7 @@
   Layout = "_Layout";
 }
 
-@model Recipe.Models.Item
+@model Recipe.Models.Formula
 
 <h1>Add a new task</h1>
 
@@ -14,6 +14,6 @@
     @Html.Label("Select tag")
     @Html.DropDownList("TagId")
 
-    <input type="submit" value="Add new item" class="accept" />
+    <input type="submit" value="Add new recipe" class="accept" />
 }
-<p>@Html.ActionLink("Show all items", "Index", new { area = "" }, new { @class = "accept" })</p>
+<p>@Html.ActionLink("Show all recipes", "Index", new { area = "" }, new { @class = "accept" })</p>
