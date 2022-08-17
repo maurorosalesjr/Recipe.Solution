@@ -6,7 +6,17 @@
 
 <h1>Recipe Details</h1>
 <hr />
-<h3>@Html.DisplayNameFor(model => model.FormulaName): @Html.DisplayFor(model => model.FormulaName)</h3>
+<h3>@Html.Label("Recipe Name"): @Html.DisplayFor(model => model.FormulaName)</h3>
+<p>@Html.LabelFor(model => model.Ingredients):
+  <br>
+  @Html.DisplayFor(model => model.Ingredients)
+</p>
+<p>@Html.LabelFor(model => model.Instructions):
+  <br>
+  @Html.DisplayFor(model => model.Instructions)
+</p>
+
+
 
 @if(@Model.JoinEntities.Count == 0)
 {
@@ -14,7 +24,7 @@
 }
 else
 {
-  <h4>Tags the formula belongs to:</h4>
+  <h4>Tags this recipe belongs to:</h4>
   <ul>
   @foreach(var join in Model.JoinEntities)
   {

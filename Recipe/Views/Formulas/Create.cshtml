@@ -8,12 +8,22 @@
 
 @using (Html.BeginForm())
 {
-    @Html.LabelFor(model => model.FormulaName)
+    @Html.Label("Recipe Name")
     @Html.TextBoxFor(model => model.FormulaName)
-
-    @Html.Label("Select tag")
+    <br>
+    @Html.LabelFor(model => model.Ingredients)
+    <br>
+    @Html.TextBoxFor(model => model.Ingredients)
+    <br>
+    @Html.LabelFor(model => model.Instructions)
+    <br>
+    @Html.TextBoxFor(model => model.Instructions)
+    <br>
+    @Html.Label("Select tag: ")
     @Html.DropDownList("TagId")
-
+    <br>
     <input type="submit" value="Add new recipe" class="accept" />
+    <br>
 }
+<br>
 <p>@Html.ActionLink("Show all recipes", "Index", new { area = "" }, new { @class = "accept" })</p>

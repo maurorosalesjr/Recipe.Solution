@@ -11,14 +11,20 @@
 @using (Html.BeginForm())
 {
     @Html.HiddenFor(model => model.FormulaId)
-
+    <br>
     @Html.LabelFor(model => model.FormulaName)
     @Html.EditorFor(model => model.FormulaName)
-
+    <br>
+    @Html.LabelFor(model => model.Ingredients)
+    @Html.EditorFor(model => model.Ingredients)
+    <br>
+    @Html.LabelFor(model => model.Instructions)
+    @Html.EditorFor(model => model.Instructions)
+    <br>
     @Html.Label("Select tag")
     @Html.DropDownList("TagId")
-
+    <br>
     <input type="submit" value="Save" class="accept" />
 }
-
+<br>
 <p>@Html.ActionLink("Back to list", "Index", new { area = "" }, new { @class = "accept" })</p>

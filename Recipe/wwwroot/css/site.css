@@ -17,13 +17,15 @@ body {
   margin-right: 8%;
   margin-top: 7%;
   font-family: 'Times New Roman', Times, serif;
-  max-width: 100%; 
+  max-width: 84%; 
   width: 90%;
 	border-radius: 2%;
 	border: 5px;
 	border-style: ridge;
 	border-color: dimgray;
 	background-color: lightblue;
+  height: 800px;
+  padding-bottom: 10px;
 }
 
 li {
