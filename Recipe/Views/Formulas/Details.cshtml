@@ -11,6 +11,12 @@
   <br>
   @Html.DisplayFor(model => model.Ingredients)
 </p>
+<ul>
+@foreach(var Ing in Model.ListIngredients)
+{
+  <li>@</li>
+}
+</ul>
 <p>@Html.LabelFor(model => model.Instructions):
   <br>
   @Html.DisplayFor(model => model.Instructions)
@@ -39,5 +45,5 @@ else
 }
 
 <p>@Html.ActionLink("Back to list", "Index", new { area = "" }, new { @class = "accept" })</p>
-<p>@Html.ActionLink("Edit Formula", "Edit", new { id = Model.FormulaId }, new { @class = "accept" })</p>
-<p>@Html.ActionLink("Delete Formula", "Delete", new { id = Model.FormulaId }, new { @class = "accept" })</p>
+<p>@Html.ActionLink("Edit Recipe", "Edit", new { id = Model.FormulaId }, new { @class = "accept" })</p>
+<p>@Html.ActionLink("Delete Recipe", "Delete", new { id = Model.FormulaId }, new { @class = "accept" })</p>
