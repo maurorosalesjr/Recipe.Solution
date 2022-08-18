@@ -1,4 +1,7 @@
 using System.Collections.Generic;
+using System;
+using System.Data;
+using System.Diagnostics;
 
 namespace Recipe.Models
 {
@@ -21,6 +24,7 @@ namespace Recipe.Models
         {
           string[] Ing = Ingredients.Split(',');
           return Ing;
+          
         }
     
     }
