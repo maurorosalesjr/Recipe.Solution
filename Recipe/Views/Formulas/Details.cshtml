@@ -12,9 +12,9 @@
   @Html.DisplayFor(model => model.Ingredients)
 </p>
 <ul>
-@foreach(var Ing in Model.ListIngredients)
+@foreach(var Ing in Model.Ingredients)
 {
-  <li>@</li>
+  <li>@($"{Ing}")</li>
 }
 </ul>
 <p>@Html.LabelFor(model => model.Instructions):
