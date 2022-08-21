@@ -29,6 +29,12 @@ body {
   padding-bottom: 10px;
 }
 
+.create {
+  margin-left: 10%;
+  
+
+}
+
 li {
   margin-left: 5%;
   margin-right: 10%;
@@ -124,7 +130,7 @@ h1 {
 }
 
 .img {
-  background-image: url("../img/img1.jpeg");
+  background-image: url("../img/img1.png");
   background-repeat: no-repeat;
   background-size: cover;
   align-content: center;

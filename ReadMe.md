@@ -2,7 +2,7 @@
 
 #### By Mauro Rosales jr
 
-#### enables 
+#### enables user to create and store their recipes
 
 ## Technologies Used
 
@@ -18,7 +18,7 @@
 
 ## Description
 
-Enables 
+Enables user to create a login, and input/view/edit/delete their recipes. Only the user can see thier own recipes, but all users are able to create and delete recipe tags. Tags enable the recipes to be categorized for easy searching. The recipe Creation Station will reformat the ingredients into an ingredient list, as long as the user is seperating the ingredients with a comma (,).
 
 ![SQL Design](Recipe/wwwroot/img/SQLDesign.png "SQL Design")
 
@@ -39,9 +39,9 @@ Enables
 
 
 ## Sample
-![create engineer view](Factory/wwwroot/img/sample2.png "Adding a new engineer")
+![create recipe](Recipe/wwwroot/img/Sample1.png "Creating new recipe ")
 
-![machine details view](Factory/wwwroot/img/sample1.png "Checking who is certified to work on machine")
+![view recipe](Recipe/wwwroot/img/Sample2.png "Viewing recipe")
 
 ## Known Bugs
 

@@ -4,22 +4,22 @@
 
 @model Recipe.Models.Formula
 
-<h1>Add a new task</h1>
+<h1 class="img">Add a new Recipe</h1>
 
 @using (Html.BeginForm())
 {
-    @Html.Label("Recipe Name")
+    @Html.Label("Recipe Name: ")
     <br>
-    @Html.TextBoxFor(model => model.FormulaName)
+    <div class="create">@Html.TextBoxFor(model => model.FormulaName, new { style = "width: 90%;"})</div>
     <br>
     @Html.LabelFor(model => model.Ingredients)
-    <p>Format: quantity ingredient, ... (dont forget to pace commas between each ingredient) </p>
+    <p>Format: quantity ingredient, <br>---dont forget to pace commas between each ingredient </p>
     <br>
-    @Html.TextAreaFor(model => model.Ingredients, new { @rows=5 })
+    <div class="create"> @Html.TextAreaFor(model => model.Ingredients, new { @rows=5, style = "width: 90%;" })</div>
     <br>
     @Html.LabelFor(model => model.Instructions)
     <br>
-    @Html.TextAreaFor(model => model.Instructions, new { @rows=10 })
+    <div class="create"> @Html.TextAreaFor(model => model.Instructions, new { @rows=10, style = "width: 90%;" })</div>
     <br>
     @Html.Label("Select tag: ")
     @Html.DropDownList("TagId")
@@ -27,5 +27,6 @@
     <input type="submit" value="Add new recipe" class="accept" />
     <br>
 }
+
 <br>
 <p>@Html.ActionLink("Show all recipes", "Index", new { area = "" }, new { @class = "accept" })</p>
