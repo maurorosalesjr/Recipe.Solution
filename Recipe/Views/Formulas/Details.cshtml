@@ -15,11 +15,12 @@
 
 
 <ul>
-@foreach(var Ing in Model.ListIngredients())//pretty sure the error is somewhere here
+@foreach(var Ing in Model.ListIngredients(Model.Ingredients))//pretty sure the error is somewhere here
 {
   <li>@($"{Ing}")</li>
 }
 </ul>
+
 
 <p>@Html.LabelFor(model => model.Instructions):
   <br>

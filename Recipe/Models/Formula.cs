@@ -20,7 +20,7 @@ namespace Recipe.Models
 
         public virtual ICollection<Box> JoinEntities { get;}
 
-        public static string[] ListIngredients (string Ingredients)
+        public string[] ListIngredients (string Ingredients)
         {
           string[] Ing = Ingredients.Split(',');
           return Ing;
