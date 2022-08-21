@@ -13,6 +13,7 @@
     @Html.TextBoxFor(model => model.FormulaName)
     <br>
     @Html.LabelFor(model => model.Ingredients)
+    <p>Format: quantity ingredient, ... (dont forget to pace commas between each ingredient) </p>
     <br>
     @Html.TextAreaFor(model => model.Ingredients, new { @rows=5 })
     <br>
