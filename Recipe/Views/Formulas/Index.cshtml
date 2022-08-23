@@ -12,7 +12,7 @@
   <ul>
     @foreach (Formula formula in Model)
     {
-      <li>@Html.ActionLink($"{formula.FormulaName}", "Details", new { id = formula.FormulaId }, new { @class = "name" })</li>
+      <li>@formula.Rating | @Html.ActionLink($"{formula.FormulaName}", "Details", new { id = formula.FormulaId }, new { @class = "name" })</li>
     }
   </ul>
 } 

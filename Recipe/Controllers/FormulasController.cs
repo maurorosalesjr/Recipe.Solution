@@ -27,9 +27,25 @@ namespace Recipe.Controllers
     {
         var userId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
         var currentUser = await _userManager.FindByIdAsync(userId);
-        var userFormulas = _db.Formulas.Where(entry => entry.User.Id == currentUser.Id).ToList();
+        var userFormulas = _db.Formulas.Where(entry => entry.User.Id == currentUser.Id).OrderByDescending(model => model.Rating).ToList();
         return View(userFormulas);
     }
+
+    // public ActionResult Index(string sortOrder)
+    // {
+    //   ViewBag.RankSortParm = String.IsNullOrEmpty(sortOrder) ? "Rating" : "";
+    //   var userId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+    //   var currentUser = await _userManager.FindByIdAsync(userId);
+    //   var userFormulas = _db.Formulas.Where(entry => entry.User.Id == currentUser.Id).ToList();
+      
+    //   switch (sortOrder)
+    //   {
+    //     case "Rating":
+    //     userFormulas = userFormulas.OrderByDescending(model => model.Rating).ToList();
+    //     break;
+    //   }
+    //   return View(userFormulas);
+    // }
 
     public ActionResult Create()
     {
