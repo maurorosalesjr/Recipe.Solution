@@ -6,7 +6,7 @@
 @model IEnumerable<Recipe.Models.Formula>
 
 <h1  class="img">Recipes for @User.Identity.Name</h1>
-
+<h6>Rating | Recipe Name </h6>
 @if (Model.Any())
 {
   <ul>
