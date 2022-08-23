@@ -24,6 +24,11 @@
     @Html.Label("Select tag: ")
     @Html.DropDownList("TagId")
     <br>
+    for(int i = 1; i =< 10; i++)
+    {
+      <input type="radio" id="Rating" name="Rating" value="@i" />@i
+    }
+    <br>
     <input type="submit" value="Add new recipe" class="accept" />
     <br>
 }
